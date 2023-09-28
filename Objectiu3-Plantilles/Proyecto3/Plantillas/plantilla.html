@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto 3</title>
+</head>
+<body>
+    <p>Este es la plantilla del tercer proyecto</p>
+    <p>El habitante es: {{nombre_habitante}} {{apellido_habitante}}, {{anyo_habitante}} y reside en {{ciudad_habitante}}</p>
+    <p>El alumno es: {{info_alumno.0}} {{info_alumno.1}}, {{info_alumno.2}}. Actualmente reside en {{info_alumno.3}}</p>
+    <p>Fecha y hora actual: {{ahora_mismo}}</p>
+    <ul>
+        {% for Modulo in lista_modulos %}
+            <li>{{Modulo.capitalize}}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
